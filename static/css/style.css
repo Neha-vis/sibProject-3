@@ -12,7 +12,12 @@
     position: relative;
   }
   .hero-section h1{
-    font-size: 3rem;
+    font-size: 3.2rem;
+    font-family: var(--sans-serif);
+  }
+  .hero-section P{
+    font-family: var(--sans-serif);
+    font-size: 20px;
   }
   .hero-section h1 span{
     color: var(--primary);
@@ -40,6 +45,7 @@
   h4.text-center {
     color: var(--tertiary);
     font-weight: 700;
+    font-family: var(--sans-serif);
   }
   
   .input-group-text {
@@ -89,6 +95,9 @@
   .trusted-section h2 {
     color: var(--primary); 
     margin-bottom: 40px;
+    font-family: var(--sans-serif);
+    font-weight: bold;
+    font-size: 2.5rem;
   }
   .association-logo {
     max-width: 150px;
@@ -161,6 +170,13 @@
   .custom-section {
     padding: 60px 0;
   }
+  .custom-section h2{
+    font-family: var(--sans-serif);
+  }
+  .custom-section p{
+    font-family: var(--sans-serif);
+    font-size: 20px;
+  }
   .image-box {
     position: relative;
     width: 100%;
@@ -190,3 +206,75 @@
     background-image: repeating-linear-gradient(135deg, #1e90ff, #1e90ff 2px, transparent 2px, transparent 6px);
     opacity: 0.5;
   } */
+  .services-section {
+    padding: 60px 20px;
+    background-color: var(--light);
+    font-family: var(-- --sans-serif);
+    background: var(--light-alt);
+  }
+  .services-section h2{
+    font-family: var(--sans-serif);
+    font-size: 2.2rem;
+    color: var(--primary);
+    font-weight: bold ;
+    margin-bottom: 50px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+ 
+  
+  .service-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .service-card p {
+    color:var(--dark);
+    font-size: 15px;
+    margin-bottom: auto;
+    font-family: var(--sans-serif);
+  }
+  
+  .service-card a {
+    margin-top: 15px;
+    color: var(--tertiary);
+    font-weight: 500;
+    text-decoration: none;
+    font-family: var(--sans-serif);
+  }
+  
+  .service-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Swiper-specific */
+  .swiper {
+    padding-bottom: 40px;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  
