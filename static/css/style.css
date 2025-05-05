@@ -485,7 +485,63 @@ h4.text-center {
     width: 100%;
   }
 }
+/* kuch bhi */
 
+.features-section {
+  padding: 60px 0px;
+  background:var(--light-alt);
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: var(--primary);
+  font-family: var(--sans-serif);
+}
+
+.feature-card {
+ 
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.feature-card h4 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-family: var(--sans-serif);
+  color: var(--dark);
+  font-weight: bold;
+
+}
+
+.feature-card p {
+  font-size: 20px;
+  color:var(--dark-alt );
+  font-family: var(--sans-serif);
+}
+
+
+@media (max-width: 767px) {
+  .feature-card img {
+    width: 60px;
+    height: 60px;
+  }
+}
 /* swiper */
 .testimonial-section{
   padding: 60px 0;
@@ -708,8 +764,9 @@ height: 60px;
   flex-grow: 1; 
 }
 .Footer-section{
-  padding: 60px 0;
+  padding: 60px 0px;
   background: black;
+  margin-bottom: 20px;
 
 }
 .Footer-section i{
@@ -752,14 +809,25 @@ height: 60px;
 .feature-section2 {
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
-    url('../img/about2.png'); 
+    url('../img/about2.png'); /* Your background image */
   background-size: cover;
   background-position: center;
   padding: 60px 0;
   color: var(--light);
 }
 
-
+.feature-section2 h2{
+  font-family: var(--sans-serif);
+  color: var(--light);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center; 
+}
+.feature-section2 h2 span{
+  color: var(--primary);
+  font-style: initial;
+  text-align: end;
+}
 
 .feature-card2 {
   
@@ -768,28 +836,20 @@ height: 60px;
   height: 100%;
   padding: 30px;
   border-radius: 10px;
-  flex-direction: column;
+  margin-top: 20px;
 }
+
 .feature-card2 .link-style{
   color: var(--tertiary);
-  font-family: var(--sans-serif);
   font-size: 15px;
-  align-self: flex-end;
-
+  text-decoration: none;
 }
-
-.feature-section2 h2{
-  color: var(--light);
-  font-family: var(--sans-serif);
-  font-size: 3rem;
-  margin-bottom: 50px;
-  font-weight: bold;
-  text-align: center;
- 
-}
-.feature-section2 h2 span{
-  color: var(--primary);
-  font-style: initial;
+.feature-section2 .link-style::after {
+  content: ' →'; 
+  font-size: 25px; 
+  margin-left: 8px; 
+  color: var(--tertiary);
+  font-weight: bold; 
 }
 
 .feature-card2:hover {
