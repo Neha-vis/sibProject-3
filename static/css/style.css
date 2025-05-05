@@ -1,10 +1,22 @@
 @import url(./variable.css);
+
+.sticky-navbar {
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  background-color: var(--dark);
+  z-index: 9;
+}
+
+/* Button styling */
 .navbar .btn-navbar {
   padding: 5px 30px;
   background: var(--primary);
   color: var(--dark);
   border-radius: 2px;
+  transition: background-color 0.3s ease; 
 }
+
 
 .hero-section {
   background: url("../img/Hero.png")
@@ -1032,14 +1044,12 @@ height: 60px;
 }
 
 
-/* Area-weServe-section */
-.Area-weServe-section{
- 
-  margin-bottom: 50px;
-  margin-top: 50px;
+.Area-weServe-section {
+  margin: 50px 0;
 }
+
 .area-left {
-  background-image: url('../img//about2.png'); /* Add your background image here */
+  background-image: url('../img//about2.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1052,14 +1062,14 @@ height: 60px;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Dark transparent overlay */
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 
 .area-left .content {
   z-index: 2;
-  top: 90px;
-  text-align:center;
+  position: relative;
+  text-align: center;
 }
 
 .area-left h2 {
@@ -1075,22 +1085,14 @@ height: 60px;
   font-size: 2rem;
 }
 
-
-
-
-
-/* Right Side with Area List */
 .area-right {
- 
   padding: 2rem;
 }
 
 .area-right h4 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom:3rem;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 2rem;
   color: var(--dark);
   font-family: var(--sans-serif);
 }
@@ -1098,19 +1100,39 @@ height: 60px;
 .area-right ul {
   list-style: none;
   padding: 0;
- 
 }
 
 .area-right ul li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   font-size: 1.2rem;
-  
   font-family: var(--sans-serif);
   color: var(--dark-alt);
 }
 
+.container2 {
+  width: 100%;
+  padding: 0 0.75rem;
+  margin: 0 auto;
+}
 
+/* Responsive */
+@media (max-width: 767px) {
+  .area-left h2 {
+    font-size: 1.5rem;
+  }
 
+  .area-left .highlight {
+    font-size: 1.8rem;
+  }
+
+  .area-right h4 {
+    font-size: 1.8rem;
+  }
+
+  .area-right ul li {
+    font-size: 1rem;
+  }
+}
 
 /* question -section */
 .question-section {
