@@ -25,6 +25,7 @@
     center/cover no-repeat;
   color: var(--light);
   position: relative;
+ padding: 60px 0;
 }
 .hero-section h1 {
   font-size: 3.2rem;
