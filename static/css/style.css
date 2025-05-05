@@ -1,11 +1,13 @@
 @import url(./variable.css);
 
 .sticky-navbar {
-  padding: 10px 0;
-  position: sticky;
+  padding: 15px 0;
+  position: fixed;
   top: 0;
+  width: 100%;
   background-color: var(--dark);
   z-index: 9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 /* Button styling */
@@ -110,6 +112,7 @@ h4.text-center {
     padding: 12px;
     font-size: 16px;
   }
+
 
   .hero-overlay {
     padding: 60px 0;
@@ -802,15 +805,15 @@ h4.text-center {
 
 @media (max-width: 991px) {
   .cta-box {
-    text-align: center; /* Center content on medium screens */
+    text-align: center; 
   }
 
   .cta-box h3 {
-    font-size: 2.2rem; /* Slightly smaller title for smaller screens */
+    font-size: 2.2rem; 
   }
 
   .cta-box p {
-    font-size: 1.125rem; /* Slightly smaller text */
+    font-size: 1.125rem; 
   }
 
   .cta-box .button {
@@ -821,19 +824,19 @@ h4.text-center {
 
 @media (max-width: 767px) {
   .cta-section {
-    padding: 50px 0; /* Reduced padding on smaller screens */
+    padding: 50px 0; 
   }
 
   .cta-box h3 {
-    font-size: 1.8rem; /* Further reduction of font size for smaller screens */
+    font-size: 1.8rem; 
   }
 
   .cta-box p {
-    font-size: 1rem; /* Smaller text for mobile devices */
+    font-size: 1rem; 
   }
 
   .cta-box .button {
-    padding: 12px 0; /* Adjust button size */
+    padding: 12px 0; 
   }
 }
 
@@ -889,7 +892,7 @@ h4.text-center {
 /* Media Queries for Responsiveness */
 @media (max-width: 991px) {
   .section-title {
-    font-size: 2.5rem; /* Adjust font size on medium screens */
+    font-size: 2.5rem; 
   }
 
   .feature-card {
@@ -912,13 +915,13 @@ h4.text-center {
 
 @media (max-width: 767px) {
   .section-title {
-    font-size: 2.2rem; /* Adjust font size for small screens */
+    font-size: 2.2rem; 
   }
 
   .row {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Stack cards vertically on smaller screens */
+    align-items: center; 
   }
 
   .feature-card img {
@@ -998,47 +1001,48 @@ height: 60px;
 }
 @media (max-width: 991px) {
   .testimonial-section h2 {
-    font-size: 1.8rem; /* Slightly smaller font for better mobile viewing */
+    font-size: 1.8rem; 
   }
 
   .swiper-slide p {
-    font-size: 1rem; /* Adjust text size for smaller screens */
+    font-size: 1rem; 
   }
 
   .swiper-slide h6 {
-    font-size: 1.125rem; /* Adjust font size for mobile */
+    font-size: 1.125rem; 
   }
 
   .swiper-slide img {
-    width: 50px; /* Make images smaller on mobile */
+    width: 50px; 
     height: 50px;
   }
 
   .swiper {
-    padding: 0 15px; /* Add some padding on sides for smaller screens */
+    padding: 0 15px; 
   }
 }
 
+
 @media (max-width: 767px) {
   .testimonial-section {
-    padding: 50px 0; /* Reduce padding on mobile */
+    padding: 50px 0; 
   }
 
   .testimonial-section h2 {
-    font-size: 1.5rem; /* Reduce font size for smaller screens */
-    margin-bottom: 20px; /* Add more spacing below the heading */
+    font-size: 1.5rem; 
+    margin-bottom: 20px; 
   }
 
   .swiper-slide p {
-    font-size: 0.95rem; /* Adjust text size for small screens */
+    font-size: 0.95rem; 
   }
 
   .swiper-slide h6 {
-    font-size: 1rem; /* Adjust the client name font size */
+    font-size: 1rem; 
   }
 
   .swiper-slide img {
-    width: 40px; /* Smaller images for mobile */
+    width: 40px; 
     height: 40px;
   }
 }
@@ -1203,65 +1207,64 @@ height: 60px;
 /* Responsive Design */
 @media (max-width: 992px) {
   .content h2 {
-    font-size: 2.5rem; /* Adjust header size for medium screens */
+    font-size: 2.5rem; 
   }
 
   .content p {
-    font-size: 18px; /* Adjust paragraph size for medium screens */
+    font-size: 18px; 
   }
 
   .icon-box {
-    padding: 30px 20px; /* Reduce padding on medium screens */
+    padding: 30px 20px; 
   }
 
   .icon-box p {
-    font-size: 18px; /* Reduce text size inside icon box */
-  }
+    font-size: 18px; 
 }
 
 @media (max-width: 768px) {
   .content h2 {
-    font-size: 2rem; /* Adjust header size for small screens */
+    font-size: 2rem; 
   }
 
   .content p {
-    font-size: 16px; /* Adjust paragraph size for small screens */
+    font-size: 16px; 
   }
 
   .icon-box {
-    padding: 25px 15px; /* Reduced padding on smaller devices */
-    min-height: 220px; /* Reduced icon box height */
+    padding: 25px 15px; 
+    min-height: 220px; 
   }
 
   .icon-box p {
-    font-size: 16px; /* Further reduce text size inside icon box */
-  }
+    font-size: 16px; 
 
   .icon-box i {
-    font-size: 30px; /* Adjust icon size for small screens */
+    font-size: 30px; 
   }
 }
+}}
 
 @media (max-width: 480px) {
   .content h2 {
-    font-size: 1.8rem; /* Even smaller header size for very small screens */
+    font-size: 1.8rem; 
   }
 
   .content p {
-    font-size: 14px; /* Adjust paragraph size for very small screens */
+    font-size: 14px; 
   }
 
   .icon-box {
-    padding: 20px 10px; /* Further reduce padding for very small devices */
-    min-height: 180px; /* Further reduced icon box height */
+    padding: 20px 10px; 
+    min-height: 180px; 
   }
 
   .icon-box p {
-    font-size: 14px; /* Adjust text size inside icon box */
+    font-size: 14px; 
   }
 
   .icon-box i {
-    font-size: 25px; /* Adjust icon size for very small screens */
+    font-size: 25px; 
   }
 }
 
@@ -1312,67 +1315,67 @@ height: 60px;
 /* Responsive Design */
 @media (max-width: 992px) {
   .Footer-section i {
-    font-size: 25px; /* Smaller icons for medium screens */
+    font-size: 25px; 
   }
 
   .Footer-section h6 {
-    font-size: 22px; /* Slightly smaller text for headings */
+    font-size: 22px; 
   }
 
   .Footer-section p {
-    font-size: 16px; /* Adjust font size for paragraphs */
+    font-size: 16px; 
   }
 
   .Footer-section h5 {
-    font-size: 18px; /* Adjust font size for subscribe section heading */
+    font-size: 18px; 
   }
 }
 
 @media (max-width: 768px) {
   .Footer-section .col-md-4 {
-    margin-bottom: 20px; /* Add space between columns for small screens */
+    margin-bottom: 20px; 
   }
 
   .Footer-section i {
-    font-size: 22px; /* Even smaller icons on small screens */
+    font-size: 22px; 
   }
 
   .Footer-section h6 {
-    font-size: 20px; /* Smaller heading size for small screens */
+    font-size: 20px; 
   }
 
   .Footer-section p {
-    font-size: 14px; /* Adjust font size for paragraphs on small screens */
+    font-size: 14px; 
   }
 
   .Footer-section .btn-clr {
-    width: 100%; /* Make buttons full width on small screens */
+    width: 100%; 
   }
 }
 
 @media (max-width: 480px) {
   .Footer-section i {
-    font-size: 20px; /* Even smaller icons for very small screens */
+    font-size: 20px; 
   }
 
   .Footer-section h6 {
-    font-size: 18px; /* Further reduce heading size */
+    font-size: 18px; 
   }
 
   .Footer-section p {
-    font-size: 12px; /* Adjust text size for very small screens */
+    font-size: 12px; 
   }
 
   .Footer-section h5 {
-    font-size: 16px; /* Adjust heading size for newsletter */
+    font-size: 16px; 
   }
 
   .Footer-section .col-md-4 {
-    padding: 0 15px; /* Adjust padding for very small screens */
+    padding: 0 15px; 
   }
 
   .Footer-section .btn-clr {
-    padding: 12px 0; /* Adjust button padding for small screens */
+    padding: 12px 0; 
   }
 }
 
@@ -1381,7 +1384,7 @@ height: 60px;
 .feature-section2 {
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
-    url('../img/about2.png'); /* Your background image */
+    url('../img/about2.png'); 
   background-size: cover;
   background-position: center;
   padding: 60px 0;
