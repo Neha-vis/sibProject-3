@@ -695,21 +695,18 @@ h4.text-center {
 /* property section */
 
 .property-section {
-  height: 80vh;
+  background-color: var(--dark);
 }
 
-.row {
+.custom-property-row {
+  min-height: 80vh;
   display: flex;
-  height: 100%;
-  margin: 0;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
 .image-side {
   padding: 0;
-  height: 100%;
   overflow: hidden;
-  flex: 1 1 50%; /* Make the image side take 50% width on larger screens */
 }
 
 .image-side img {
@@ -721,21 +718,17 @@ h4.text-center {
 
 .content-side {
   background-color: var(--dark);
-  padding: 0;
-  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: start;
-  flex: 1 1 50%; /* Make the content side take 50% width on larger screens */
+  padding: 0;
 }
 
 .content-wrapper {
   color: var(--light);
   padding: 40px;
-  background: var(--dark);
+  width: 100%;
+  box-sizing: border-box;
   font-family: var(--sans-serif);
-  width: 100%; /* Allow content to take full width */
-  box-sizing: border-box; /* Prevent content overflow */
 }
 
 .content-wrapper h2 {
@@ -745,43 +738,28 @@ h4.text-center {
   margin-bottom: 25px;
 }
 
-.content-wrapper p {
-  color: var(--light);
-  font-size: 18px;
-}
-
 .content-wrapper h2 span {
   color: var(--primary);
-  font-size: 2.5rem;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 991px) {
-  .row {
-    flex-direction: column; /* Stack image and content vertically on smaller screens */
-  }
+.content-wrapper p {
+  font-size: 18px;
+  color: var(--light);
+}
 
-  .image-side, .content-side {
-    flex: 1 1 100%; /* Both sections take full width */
+/* Responsive Queries */
+@media (max-width: 991px) {
+  .custom-property-row {
+    flex-direction: column;
   }
 
   .content-wrapper {
     text-align: center;
     padding: 20px;
-    width: 100%; /* Content takes full width */
-  }
-
-  .content-wrapper h2 {
-    font-size: 2.4rem;
-    margin-bottom: 15px;
-  }
-
-  .content-wrapper p {
-    font-size: 18px;
   }
 
   .image-side img {
-    object-fit: cover;
+    height: auto;
   }
 }
 
