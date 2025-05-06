@@ -1,12 +1,12 @@
 @import url(./variable.css);
 
 .sticky-navbar {
-  padding: 15px 0;
+  padding: 10px 0;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: var(--dark);
-  z-index: 9;
+  z-index: 99;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
@@ -16,7 +16,12 @@
   background: var(--primary);
   color: var(--dark);
   border-radius: 2px;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
 }
 
 
@@ -42,7 +47,7 @@
 .hero-overlay {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 80px 0;
-  
+  padding-top: 120px;
   height: 100%; 
  
 }
@@ -71,14 +76,16 @@ h4.text-center {
   font-size: 15px;
   font-family: var(--sans-serif);
 }
-
+.form-control{
+  height: 50px;
+}
 .form-control:focus {
   box-shadow: none;
   outline: none;
   border-color: var(--primary);
 }
-#address {
-  height: 70px;
+.customHeight {
+  height: 80px;
 }
 
 .btn-clr {
@@ -86,11 +93,15 @@ h4.text-center {
   color: var(--dark);
   font-weight: bold;
   border: none;
-  padding: 10px;
-  border-radius: 0;
+  padding: 12px 10px;
+  border-radius: 5px;
   transition: background 0.3s ease;
   font-size: 16px;
   font-family: var(--sans-serif);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .btn-clr:hover {
@@ -104,7 +115,7 @@ h4.text-center {
 /* Responsive Styles */
 @media (max-width: 991px) {
   .hero-section h1 {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
   }
 
   .hero-section p {
@@ -283,7 +294,7 @@ h4.text-center {
   }
 
   .form-wrapper {
-    flex-direction: row; /* Keep the form items in row layout */
+    flex-direction: row; 
   }
 
   .rental-input {
@@ -519,7 +530,7 @@ h4.text-center {
 }
 /* about us */
 .about-section {
-  padding: 80px 0 50px;
+  padding: 80px 0;
   position: relative;
   background: var(--light-alt);
 }
@@ -577,8 +588,8 @@ h4.text-center {
 
 .list-style-one li::before {
   content: "\f058";
-  font-family: var(--sans-serif);
-  font-weight: 700;
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900);
   font-size: 18px;
   color: var(--primary);
   position: absolute;
@@ -719,7 +730,7 @@ h4.text-center {
 
 .content-wrapper {
   color: var(--light);
-  max-width: 600px;
+  max-width: 45vw;
   padding: 40px;
  
   background:var(--dark);
@@ -986,7 +997,7 @@ h4.text-center {
 }
 
 .testimonial-section h2 {
-  color: var(--primary);
+  color: #fff;
   font-family: var(--sans-serif);
   font-size: 2rem;
   font-weight: bold;
@@ -1002,7 +1013,9 @@ h4.text-center {
   margin: auto;
   overflow: visible;
 }
-
+.testimonial-section h2 span{
+  color: var(--primary);
+}
 .swiper {
   position: relative;
   overflow: visible;
@@ -1403,8 +1416,9 @@ h4.text-center {
 }
 .Footer-section i{
   color: var(--light);
-  font-size: 30px;
-  margin-top: 30px;
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .Footer-section h6{
   color: var(--primary);
@@ -1598,6 +1612,16 @@ h4.text-center {
 
   .feature-card2 p {
     font-size: 18px;
+  }
+  .navbar-brand img{
+    width: 130px;
+    height: auto;
+  }
+  .navbar .btn-navbar{
+    padding:5px 13px
+  }
+  .about-section .content-column .inner-column{
+    padding-left: 0px;
   }
 }
 

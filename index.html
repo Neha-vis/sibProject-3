@@ -1,343 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OC PRO</title>
-    <!-- css -->
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  />
-    <!-- custom css -->
-     <link rel="stylesheet" href="./static/css/style.css">
-      <!-- swiper -->
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
-  </head>
-  <body>
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black px-4 sticky-navbar">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
-        
-        
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="./static//img/logo.png" alt="OC Pro Logo" height="62" class="me-2">
-          
-        </a>
-    
-      
-        <a href="tel:7142152243" class="fs-5 btn-navbar text-black fw-bold">
-          (714) 215-2243
-        </a>
-    
-      </div>
-    </nav>
-    
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="hero-overlay">
-        <div class="container">
-          <div class="row align-items-center g-5  ">
-            <!-- Left Content -->
-            <div class="col-lg-6 col-md-12 mb-4 text-white ">
-              <h1 class="fw-bold  ">Orange County <span>Property Management</span> You Can Trust</h1>
-              <p class="mt-3 fs-5">Serving Orange County and surrounding communities.</p>
-              <ul class="mt-3">
-                <li><strong>Property Tenant Screenings</strong></li>
-                <li><strong>100% Rent Collection Guarantee</strong></li>
-                <li><strong>Your Property Will Not Sit Vacant</strong></li>
-              </ul>
-              <a href="#" class="button mt-3"><span>More Explore Services</span></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OC PRO</title>
+  <!-- css -->
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./static/css/style.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black px-md-4 sticky-navbar">
+    <div class="container-fluid container-xxl d-flex justify-content-between align-items-center">
+
+
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./static//img/logo.png" alt="OC Pro Logo" height="62" class="me-2">
+
+      </a>
+
+
+      <a href="tel:7142152243" class="fs-5 btn-navbar text-black fw-bold">
+        <i class="fa fa-phone"></i> (714) 215-2243
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section py-lg-0">
+    <div class="hero-overlay">
+      <div class="container">
+        <div class="row align-items-center g-5  ">
+          <!-- Left Content -->
+          <div class="col-lg-6 col-md-12 mb-4 text-white ">
+            <h1 class="fw-bold  ">Orange County <span>Property Management</span> You Can Trust</h1>
+            <p class="mt-3 fs-5">Serving Orange County and surrounding communities.</p>
+            <ul class="mt-3">
+              <li><strong>Property Tenant Screenings</strong></li>
+              <li><strong>100% Rent Collection Guarantee</strong></li>
+              <li><strong>Your Property Will Not Sit Vacant</strong></li>
+            </ul>
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+              class="button mt-3"><span>More Explore Services</span></a>
+          </div>
+
+
+          <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-end">
+            <div class="form-container">
+              <h4 class="text-center mb-4 ">Complimentary Rental Analysis</h4>
+              <form id="customForm">
+                <div class="mb-3">
+                  <input type="text" id="name" class="form-control" placeholder="Name" />
+                </div>
+
+                <div class="mb-3">
+                  <input type="tel" id="phone" class="form-control" placeholder="Phone" />
+                </div>
+
+                <div class="mb-3">
+                  <input type="email" id="email" class="form-control" placeholder="Email Address" />
+                </div>
+
+                <div class="mb-3">
+                  <textarea id="message" class="form-control customHeight" placeholder="Message"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-clr w-100">Get My Free Rental Analysis</button>
+              </form>
             </div>
-  
-           
-            <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-end">
-              <div class="form-container">
-                <h4 class="text-center mb-4 ">Complimentary Rental Analysis</h4>
-                <form id="customForm">
-                  <div class="mb-2">
-                    <label class="form-label">Name</label>
-                    <input type="text" id="name" class="form-control" />
-                  </div>
-            
-                  <div class="mb-2">
-                    <label class="form-label">Phone</label>
-                    <input type="text" id="phone" class="form-control" />
-                  </div>
-            
-                  <div class="mb-2">
-                    <label class="form-label">Email</label>
-                    <input type="text" id="email" class="form-control" />
-                  </div>
-            
-                  <div class="mb-3">
-                    <label class="form-label">Address</label>
-                    <input type="text" id="address" class="form-control" />
-                  </div>
-            
-                  <button type="submit" class="btn btn-clr w-100">Get My Free Rental Analysis</button>
-                </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trusted-section ">
+    <div class="container">
+      <h2>Trusted by Property Management Associations</h2>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-6 col-md-3 mb-4">
+          <img src="./static/img/pic1.png">
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <img src="./static//img/pic2.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="custom-section">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-md-6 position-relative mb-4 mb-md-0">
+          <div class="image-box">
+            <img src="./static//img/rental.png" alt="Palm Trees" />
+            <div class="bg-shape"></div>
+
+            <div class="line-decoration"></div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <p class="cust-p  mb-1">Less Stress, More Peace of Mind</p>
+          <h2 class="fw-bold fs-1 ">Simplifying Rental Ownership</h2>
+          <p class=" cuto-p">So you can focus on what matters most.</p>
+          <p>
+            Owning rental property can be complex and time-consuming, but it doesn’t have to be. At Coastal Oak Property
+            Management, we manage everything from tenant screening and rent collection to marketing and maintenance
+            requests to deliver a truly exceptional experience for owners and residents.
+          </p>
+          <p>
+            Let us handle the day-to-day tasks of managing your property, so you can focus on what matters most.
+          </p>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+            class="button mt-3"><span>Explore More Services</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-section">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Image Column -->
+        <div class="image-column col-lg-6 col-md-12 col-sm-12">
+          <div class="inner-column">
+            <figure class="image-1">
+              <a href="#" class="lightbox-image" data-fancybox="images">
+                <img src="./static/img/about.png" alt="">
+              </a>
+            </figure>
+            <figure class="image-2">
+              <a href="#" class="lightbox-image" data-fancybox="images">
+                <img src="./static/img/about2.png" alt="">
+              </a>
+            </figure>
+          </div>
+        </div>
+        <!-- Content Column -->
+        <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+          <div class="inner-column">
+            <div class="sec-title">
+
+              <h2>Expert <span>Property Management in Orange County </span> – Boost Your Rental Earnings with Ease</h2>
+            </div>
+            <div class="text">
+              With over 10 years of experience and the trust of 1,000+ property owners, we simplify rental property
+              ownership across Orange County. Our mission is to maximize your rental income while eliminating the stress
+              of daily property management.
+              <br><br>
+              From tenant screening to maintenance and rent collection, we take care of everything—so you can enjoy more
+              time, more freedom, and total peace of mind. Our expert team understands the local market inside and out,
+              helping you set competitive rental rates and keep your properties consistently occupied. Whether you're a
+              first-time landlord or a seasoned investor, we provide personalized support every step of the way.
+            </div>
+
+            <ul class="list-style-one">
+              <li>Full-service property management tailored to your goals</li>
+              <li>Serving Anaheim, Santa Ana, Irvine, and surrounding areas</li>
+              <li>Transparent pricing and real-time owner portal access</li>
+            </ul>
+            <div class="btn-box">
+              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                class="button mt-3"><span>More Explore Services</span></a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <section class="question-section">
+    <div class="overlay"></div>
+    <div class="container content text-center">
+      <h2 class="mb-4">4 Simple Questions to Get Started</h2>
+      <p class="mb-5">When you come to A-Creative Property Management, we begin by asking you 4 simple questions:</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 h-100">
+          <div class="icon-box h-100">
+            <i class="fas fa-home"></i>
+            <p class="mt-3">Where Is Your Property Located?</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="icon-box">
+            <i class="fas fa-building"></i>
+            <p class="mt-3">What Type of Property Is It?</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="icon-box">
+            <i class="fas fa-question-circle"></i>
+            <p class="mt-3">What do you wish to do with the property?</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="icon-box">
+            <i class="fas fa-wrench"></i>
+            <p class="mt-3">What do you wish to do with the property?</p>
+          </div>
+        </div>
+      </div>
+      <p class="mt-5">Once you have answered these questions, we will create a management plan that caters to your
+        specific needs.</p>
+    </div>
+  </section>
+
+
+
+  <section class="rental-section">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-md-7">
+          <h2><strong>Curious How Much You Could Profit on Your Rental?</strong></h2>
+          <p>Get a free, no obligation rental analysis today.</p>
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="form-wrapper ">
+                <input type="text" class="rental-input" placeholder="Enter your property address here*" />
+                <button class="submit-btn">SUBMIT</button>
               </div>
             </div>
-            
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="trusted-section ">
-      <div class="container">
-        <h2>Trusted by Property Management Associations</h2>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-6 col-md-3 mb-4">
-            <img src="./static/img/pic1.png">
-          </div>
-          <div class="col-6 col-md-3 mb-4">
-            <img src="./static//img/pic2.png">
-          </div>
-        </div>
-      </div>
-    </section>
 
-   
-    <section class="custom-section">
-      <div class="container">
-        <div class="row align-items-center">
-       
-          <div class="col-md-6 position-relative mb-4 mb-md-0">
-            <div class="image-box">
-              <img src="./static//img/rental.png" alt="Palm Trees" />
-              <div class="bg-shape"></div>
-              
-              <div class="line-decoration"></div>
-            </div>
-          </div>
-    
-         
-          <div class="col-md-6">
-            <p class="text-uppercase cust-p  mb-1">Less Stress, More Peace of Mind</p>
-            <h2 class="fw-bold fs-1 ">Simplifying Rental Ownership</h2>
-            <p class=" cuto-p">So you can focus on what matters most.</p>
-            <p >
-              Owning rental property can be complex and time-consuming, but it doesn’t have to be. At Coastal Oak Property Management, we manage everything from tenant screening and rent collection to marketing and maintenance requests to deliver a truly exceptional experience for owners and residents.
-            </p>
-            <p >
-              Let us handle the day-to-day tasks of managing your property, so you can focus on what matters most.
-            </p>
-            <a href="#" class="button mt-3"><span>Explore More Services</span></a>
-          </div>
+        <div class="col-md-5 mt-4 mt-md-0">
+          <img src="./static//img//rental.png" alt="Happy Client" class="rental-img" />
         </div>
       </div>
-    </section>
-    <section class="about-section">
-      <div class="container">
-        <div class="row g-5">
-          <!-- Image Column -->
-          <div class="image-column col-lg-6 col-md-12 col-sm-12">
-            <div class="inner-column">
-              <figure class="image-1">
-                <a href="#" class="lightbox-image" data-fancybox="images">
-                  <img src="./static/img/about.png" alt="">
-                </a>
-              </figure>
-              <figure class="image-2">
-                <a href="#" class="lightbox-image" data-fancybox="images">
-                  <img src="./static/img/about2.png" alt="">
-                </a>
-              </figure>
-            </div>
-          </div>
-          <!-- Content Column -->
-          <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
-            <div class="inner-column">
-              <div class="sec-title">
-                
-                <h2>Expert <span>Property Management in Orange County </span> – Boost Your Rental Earnings with Ease</h2>
-              </div>
-              <div class="text">
-                With over 10 years of experience and the trust of 1,000+ property owners, we simplify rental property ownership across Orange County. Our mission is to maximize your rental income while eliminating the stress of daily property management.
-                <br><br>
-                From tenant screening to maintenance and rent collection, we take care of everything—so you can enjoy more time, more freedom, and total peace of mind. Our expert team understands the local market inside and out, helping you set competitive rental rates and keep your properties consistently occupied. Whether you're a first-time landlord or a seasoned investor, we provide personalized support every step of the way.
-              </div>
-              
-              <ul class="list-style-one">
-                <li>Full-service property management tailored to your goals</li>
-                <li>Serving Anaheim, Santa Ana, Irvine, and surrounding areas</li>
-                <li>Transparent pricing and real-time owner portal access</li>
-              </ul>
-              <div class="btn-box">
-                <a href="#" class="button mt-3"><span>More Explore Services</span></a>
-              </div>
-            </div>
-          </div>
-    
-          
-        </div>
-      </div>
-    </section>
-    <section class="question-section">
-      <div class="overlay"></div>
-      <div class="container content text-center">
-        <h2 class="mb-4">4 Simple Questions to Get Started</h2>
-        <p class="mb-5">When you come to A-Creative Property Management, we begin by asking you 4 simple questions:</p>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3 h-100">
-            <div class="icon-box h-100">
-              <i class="fas fa-home"></i>
-              <p class="mt-3">Where Is Your Property Located?</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="icon-box">
-              <i class="fas fa-building"></i>
-              <p class="mt-3">What Type of Property Is It?</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="icon-box">
-              <i class="fas fa-question-circle"></i>
-              <p class="mt-3">What do you wish to do with the property?</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="icon-box">
-              <i class="fas fa-wrench"></i>
-              <p class="mt-3">What do you wish to do with the property?</p>
-            </div>
-          </div>
-        </div>
-        <p class="mt-5">Once you have answered these questions, we will create a management plan that caters to your specific needs.</p>
-      </div>
-    </section>
-    
+    </div>
+  </section>
+  <section class="feature-section2">
+    <div class="container">
+      <div class="row g-4">
+        <h2>Explore <span>Orange Country Property Management</span> Services</h2>
 
-   
-    <section class="rental-section">
-      <div class="container">
-        <div class="row align-items-center">
-          
-          <div class="col-md-7">
-            <h2><strong>Curious How Much You Could Profit on Your Rental?</strong></h2>
-            <p >Get a free, no obligation rental analysis today.</p>
-            <div class="form-wrapper ">
-              <input type="text" class="rental-input" placeholder="Enter your property address here*" />
-              <button class="submit-btn">SUBMIT</button>
-            </div>
-          </div>
-  
-  
-          <div class="col-md-5 mt-4 mt-md-0">
-            <img src="./static//img//rental.png" alt="Happy Client" class="rental-img" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="feature-section2">
-      <div class="container">
-        <div class="row g-4">
-          <h2>Explore <span>Orange Country Property Management</span> Services</h2>
-    
-          <!-- Card 1 -->
-          <div class="col-md-4 col-sm-12">
-            <div class="feature-card2">
-              <div class="feature-title2">Efficient Property Listing</div>
-              <p>
-                Our property rental management service helps promote your properties on top listing platforms, ensuring maximum exposure and reliable tenants. We carefully optimize every listing.
-              </p>
-              <a href="#" class="link-style">More Info</a>
-            </div>
-          </div>
-    
-          <!-- Card 2 -->
-          <div class="col-md-4 col-sm-12">
-            <div class="feature-card2">
-              <div class="feature-title2">Tenant Screening & Selection</div>
-              <p>
-                We conduct a thorough screening process for every tenant, including background checks, credit history, and references, to ensure that you get trustworthy and responsible tenants.
-              </p>
-              <a href="#" class="link-style">More Info</a>
-            </div>
-          </div>
-    
-          <!-- Card 3 -->
-          <div class="col-md-4 col-sm-12">
-            <div class="feature-card2">
-              <div class="feature-title2">Maintenance & Repairs</div>
-              <p>
-                We handle regular maintenance and emergency repairs for your property, ensuring that tenants never experience any discomfort. Our team is available 24/7 to address any issues.
-              </p>
-              <a href="#" class="link-style">More Info</a>
-            </div>
-          </div>
-    
-          <!-- Card 4 -->
-          <div class="col-md-4 col-sm-12">
-            <div class="feature-card2">
-              <div class="feature-title2">Rent Collection & Accounting</div>
-              <p>
-                We manage rent collection, generate monthly financial reports, and ensure timely deposits directly into your account.
-              </p>
-              <a href="#" class="link-style">More Info</a>
-            </div>
-          </div>
-    
-          <!-- Card 5 -->
-          <div class="col-md-4 col-sm-12">
-            <div class="feature-card2">
-              <div class="feature-title2">Legal Compliance & Evictions</div>
-              <p>
-                We stay up-to-date with rental laws and regulations, handling evictions and notices professionally while protecting your interests.
-              </p>
-              <a href="#" class="link-style">More Info</a>
-            </div>
-          </div>
-    
-          <!-- Card 6 -->
-          <div class="col-md-4 col-sm-12">
-            <div class="feature-card2">
-              <div class="feature-title2">Detailed Property Inspections</div>
-              <p>
-                Regular inspections are carried out to ensure your property is well-maintained and tenants are following lease agreements.
-              </p>
-              <a href="#" class="link-style">More Info</a>
-            </div>
-          </div>
-    
-        </div>
-      </div>
-    </section>
-    
-    
-   
-    
-
-    <section class="property-section">
-      <div class="row no-gutters">
-       
-        <div class="col-lg-5 col-md-12 image-side">
-          <img src="./static/img/Property.png" alt="Property Image" />
-        </div>
-    
-       
-        <div class="col-lg-7 col-md-12 content-side">
-          <div class="content-wrapper">
-            <h2>Our property managers make  owning rental property <span>easy</span></h2>
+        <!-- Card 1 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="feature-card2">
+            <div class="feature-title2">Efficient Property Listing</div>
             <p>
-              Renting your property shouldn’t be a hassle. It should give you a greater abundance of time, money, and energy.
-              We’ve developed a team of A-Players who have made this a reality for over 1,000 property owners. <br /><br />
-              <strong>We can do the same for you.</strong>
+              Our property rental management service helps promote your properties on top listing platforms, ensuring
+              maximum exposure and reliable tenants. We carefully optimize every listing.
             </p>
-            <a href="#" class="button mt-3"><span>Discover The Differene</span></a>
+            <a href="#" class="link-style">More Info</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="feature-card2">
+            <div class="feature-title2">Tenant Screening & Selection</div>
+            <p>
+              We conduct a thorough screening process for every tenant, including background checks, credit history, and
+              references, to ensure that you get trustworthy and responsible tenants.
+            </p>
+            <a href="#" class="link-style">More Info</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="feature-card2">
+            <div class="feature-title2">Maintenance & Repairs</div>
+            <p>
+              We handle regular maintenance and emergency repairs for your property, ensuring that tenants never
+              experience any discomfort. Our team is available 24/7 to address any issues.
+            </p>
+            <a href="#" class="link-style">More Info</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="feature-card2">
+            <div class="feature-title2">Rent Collection & Accounting</div>
+            <p>
+              We manage rent collection, generate monthly financial reports, and ensure timely deposits directly into
+              your account.
+            </p>
+            <a href="#" class="link-style">More Info</a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="feature-card2">
+            <div class="feature-title2">Legal Compliance & Evictions</div>
+            <p>
+              We stay up-to-date with rental laws and regulations, handling evictions and notices professionally while
+              protecting your interests.
+            </p>
+            <a href="#" class="link-style">More Info</a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="feature-card2">
+            <div class="feature-title2">Detailed Property Inspections</div>
+            <p>
+              Regular inspections are carried out to ensure your property is well-maintained and tenants are following
+              lease agreements.
+            </p>
+            <a href="#" class="link-style">More Info</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="property-section">
+    <div class="row no-gutters">
+
+      <div class="col-lg-5 col-md-12 image-side">
+        <img src="./static/img/Property.png" alt="Property Image" />
+      </div>
+
+
+      <div class="col-lg-7 col-md-12 content-side">
+        <div class="content-wrapper">
+          <h2>Our property managers make owning rental property <span>easy</span></h2>
+          <p>
+            Renting your property shouldn’t be a hassle. It should give you a greater abundance of time, money, and
+            energy.
+            We’ve developed a team of A-Players who have made this a reality for over 1,000 property owners.
+            <br /><br />
+            <strong>We can do the same for you.</strong>
+          </p>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+            class="button mt-3"><span>Discover The Differene</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="features-section">
+    <div class="container">
+      <h2 class="section-title text-center">WHY CHOOSE ORANGE COUNTY PRO PROPERTY MANAGEMENT AGENCY?</h2>
+
+      <div class="row mt-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="feature-card">
+            <img src="./static/img/card1.png" alt="Service 1" />
+            <h4>15 YEARS EXPERIENCE</h4>
+            <p>We know how to maximize rental income, find great tenants, and keep your property running
+              smoothly—stress-free and profitable.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="feature-card">
+            <img src="./static//img/card2.png" alt="Service 2" />
+            <h4>ORANGE COUNTY PROPERTY EXPERTS NEAR YOU</h4>
+            <p>We know the OC rental market inside and out—helping you get top dollar for your property.Specializing in
+              property management in central and north Orange County.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 mb-4 mx-md-auto">
+          <div class="feature-card">
+            <img src="./static/img/card3.png" alt="Service 3" />
+            <h4>24/7 SUPPORT & TRUSTED VENDORS</h4>
+            <p>Need repairs? Our network of top-rated vendors gets the job done fast and at the best rates, keeping your
+              property in top shape without the hassle.</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+<<<<<<< HEAD
+
+  <section class="cta-section">
+    <div class="cta-box container">
+      <div class="row align-items-center">
+
+        <div class="col-lg-8 col-md-12">
+          <h3>Ready to make renting your property hassle-free?</h3>
+          <p>Join 1,000+ happy property owners who’ve already made the switch.</p>
+        </div>
+
+
+        <div class="col-lg-4 col-md-12 text-lg-end text-md-start mt-3 mt-lg-0">
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+            class="button mt-3"><span>Learn More Analysis</span></a>
+=======
    
     <section class="features-section">
       <div class="container">
@@ -370,11 +441,24 @@
               <p>Need repairs? Our network of top-rated vendors gets the job done fast and at the best rates, keeping your property in top shape without the hassle.</p>
             </div>
           </div>
+>>>>>>> a8a5b8e740f1fdf43b98eef8142fa46a387cc55b
         </div>
       </div>
-    </section>
-   
+    </div>
+  </section>
 
+<<<<<<< HEAD
+
+  <section class="testimonial-section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-9 position-relative">
+          <h2 class="mb-4">
+            Stress-Free Residential Property Management Experts:<br />
+            <span class="subhead">Just Ask Our Clients</span>
+          </h2>
+          <div class="swiper-button-prev"></div>
+=======
     <section class="cta-section">
       <div class="cta-box container">
         <div class="row align-items-center">
@@ -401,20 +485,43 @@
         </h2>
     
         <div class="swiper-container-wrapper">
+>>>>>>> a8a5b8e740f1fdf43b98eef8142fa46a387cc55b
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <!-- Slide 1 -->
               <div class="swiper-slide">
                 <div class="quote-box mb-4">
+<<<<<<< HEAD
+                  <i class="fas fa-quote-left quote-icon"></i>
+                  <p>
+                    We live 3000 miles from our property in Orange County, so quality management is a must. OC Pro has
+                    excelled at taking care of the property and keeping it rented. Highly recommended!
+                  </p>
+                  <i class="fas fa-quote-right quote-icon"></i>
+=======
                   <i class="fas fa-quote-left quote-icon fa-top-left"></i>
                   <p>
                     We live 3000 miles from our property in Orange County, so quality management is a must. OC Pro has excelled at taking care of the property and keeping it rented. Highly recommended!
                   </p>
                   <i class="fas fa-quote-right quote-icon fa-bottom-right"></i>
+>>>>>>> a8a5b8e740f1fdf43b98eef8142fa46a387cc55b
                 </div>
                 <img src="./static/img/avt2.png" class="rounded-circle mb-2" alt="Jud S." />
                 <h6 class="fw-bold mb-0">Jud S.</h6>
               </div>
+<<<<<<< HEAD
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="quote-box mb-4">
+                  <i class="fas fa-quote-left quote-icon"></i>
+                  <p>
+                    OC Pro Property Management has successfully managed my property for over 7 years. Their performance
+                    rates an A++. With excellent tenant screening, they have provided me with full occupancy at market
+                    rental rates.
+                  </p>
+                  <i class="fas fa-quote-right quote-icon"></i>
+=======
     
               <!-- Slide 2 -->
               <div class="swiper-slide">
@@ -424,10 +531,76 @@
                     OC Pro Property Management has successfully managed my property for over 7 years. Their performance rates an A++. With excellent tenant screening, they have provided me with full occupancy at market rental rates.
                   </p>
                   <i class="fas fa-quote-right quote-icon fa-bottom-right"></i>
+>>>>>>> a8a5b8e740f1fdf43b98eef8142fa46a387cc55b
                 </div>
                 <img src="./static/img/avt2.png" class="rounded-circle mb-2" alt="Robert S." />
                 <h6 class="fw-bold mb-0">Robert S.</h6>
               </div>
+<<<<<<< HEAD
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div class="quote-box mb-4">
+                  <i class="fas fa-quote-left quote-icon"></i>
+                  <p>
+                    OC Pro Prop. Management is a great company to work with. I have no worries about my property being
+                    taken
+                    care of while I'm out of state. Mitch is up front & very organized with his business & has a great
+                    staff
+                    of people with him to help with all communication & details needed.
+                  </p>
+                  <i class="fas fa-quote-right quote-icon"></i>
+                </div>
+                <img src="./static/img/avt3.png" class="rounded-circle mb-2" alt="Todd F." />
+                <h6 class="fw-bold mb-0">Todd F.</h6>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <div class="quote-box mb-4">
+                  <i class="fas fa-quote-left quote-icon"></i>
+                  <p>
+                    Mitch and his staff have managed our properties for more than 5 years. They are honest, trustworthy,
+                    very responsive to our tenants and to us. From our experience with previous managers, OC Pro/Mitch
+                    are
+                    far and away the very best.
+                  </p>
+                  <i class="fas fa-quote-right quote-icon"></i>
+                </div>
+                <img src="./static/img/avt4.png" class="rounded-circle mb-2" alt="Nancy R." />
+                <h6 class="fw-bold mb-0">Nancy R.</h6>
+              </div>
+            </div>
+
+            <!-- Swiper pagination & navigation -->
+          </div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Area-weServe-section">
+    <div class="container2">
+      <div class="row g-0 flex-column-reverse flex-md-row">
+
+        <!-- Left Side Image with Text -->
+        <div class="col-md-6 area-left d-flex align-items-center justify-content-center text-white text-center">
+          <div class="overlay"></div>
+          <div class="content text-white position-relative p-4">
+            <h2 class="fw-bold">
+              Start Getting the<br>
+              <span class="highlight">Returns You Deserve</span> Today!
+            </h2>
+            <a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+              class="button mt-3"><span>Free Trial Analysis</span></a>
+          </div>
+        </div>
+
+        <!-- Right Side Areas List -->
+        <div class="col-md-6 area-right">
+          <div class="bg-light p-3 h-100">
+=======
     
               <!-- Slide 3 -->
               <div class="swiper-slide">
@@ -487,6 +660,7 @@
     
        
           <div class="col-md-6 bg-light p-4 area-right">
+>>>>>>> a8a5b8e740f1fdf43b98eef8142fa46a387cc55b
             <h4 class="fw-bold mb-4">Areas We Serve</h4>
             <div class="row">
               <div class="col-12 col-sm-4">
@@ -531,77 +705,113 @@
               </div>
             </div>
           </div>
-    
         </div>
+
       </div>
-    </section>
-    
-    
-
-  
+    </div>
+  </section>
 
 
 
 
 
-<section class="Footer-section">
-  <div class="container">
-    <div class="row g-4 align-items-start">
-      <!-- Left Column -->
-      <div class="col-md-4">
-        <img src="./static//img/logo.png" alt="Logo" style="max-width: 120px;" />
-        <div class="mt-3 mb-3">
-          <a href="#" class="me-3 "><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="me-3 "><i class="fab fa-instagram"></i></a>
-          <a href="#" class="me-3 "><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+
+
+
+
+  <section class="Footer-section">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <!-- Left Column -->
+        <div class="col-md-4">
+          <img src="./static//img/logo.png" alt="Logo" style="max-width: 120px;" />
+          <div class="mt-3 mb-3">
+            <a href="#" class="me-3 "><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="me-3 "><i class="fab fa-instagram"></i></a>
+            <a href="#" class="me-3 "><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="d-flex gap-2">
+            <button class="btn btn-clr" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Owner Portal</button>
+            <button class="btn btn-clr" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Resident Portal</button>
+          </div>
         </div>
-        <div class="d-flex gap-2">
-          <button class="btn btn-clr">Owner Portal</button>
-          <button class="btn btn-clr">Resident Portal</button>
+
+
+        <div class="col-md-4">
+          <h6>Mailing Address</h6>
+          <p class="mb-2">4276 Katella Ave<br>Los Alamitos, CA 90720</p>
+          <h6>Hours</h6>
+          <p class="mb-2">Monday – Friday<br>9am – 5pm<br>In person by appointment only</p>
+          <p><a href="tel:( 714-215-2243)" class="mb-0 text-white fw-bold">( 714-215-2243)</a></p>
+          <a href="#" class="text-decoration-none cust-clr"> Orange, California 92865</a>
         </div>
-      </div>
 
-     
-      <div class="col-md-4">
-        <h6 >Mailing Address</h6>
-        <p class="mb-2">4276 Katella Ave<br>Los Alamitos, CA 90720</p>
-        <h6>Hours</h6>
-        <p class="mb-2">Monday – Friday<br>9am – 5pm<br>In person by appointment only</p>
-        <p class="mb-0 ">( 714-215-2243)</p>
-        <a href="#" class="text-decoration-none cust-clr"> Orange, California 92865</a>
-      </div>
 
-     
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm bg-white">
-          <h5 >Subscribe to our Property Rental Management</h5>
-          <p class="text-muted">Important tips and insights on rental properties.</p>
-          <form>
-            <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Email" required />
-            </div>
-            <button type="submit" class="btn btn-clr w-100">Submit</button>
-          </form>
+        <div class="col-md-4">
+          <div class="p-4 border rounded shadow-sm bg-white">
+            <h5>Subscribe to our Property Rental Management</h5>
+            <p class="text-muted">Important tips and insights on rental properties.</p>
+            <form>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" required />
+              </div>
+              <button type="submit" class="btn btn-clr w-100">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+
+
+
+
+
+  </section>
+
+
+
+
+</body>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title fs-5" id="staticBackdropLabel">Complimentary Rental Analysis</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="customForm">
+          <div class="mb-3">
+            <input type="text" id="name" class="form-control" placeholder="Name" />
+          </div>
+
+          <div class="mb-3">
+            <input type="tel" id="phone" class="form-control" placeholder="Phone" />
+          </div>
+
+          <div class="mb-3">
+            <input type="email" id="email" class="form-control" placeholder="Email Address" />
+          </div>
+
+          <div class="mb-3">
+            <textarea id="message" class="form-control customHeight" placeholder="Message"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-clr px-lg-5">Get My Free Rental Analysis</button>
+        </form>
+      </div>
+    </div>
   </div>
-</section>
-  
-    
-    
-    
-    
-    </section>
-    
-    
-    
-    
-  </body>
-  <!-- js -->
-  <script src="./static/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="./static/js/script.js"></script>
-  
+</div>
+<!-- js -->
+<script src="./static/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./static/js/script.js"></script>
+
 </html>

@@ -48,12 +48,12 @@ html, body {
 }
 .button span {
   display: inline-block;
-  padding: 12px 15px;
+  padding: 12px 25px;
   background: var(--dark);
   border-radius: 5px;
   border: 2px solid var(--primary);
   font-size: 16px;
-  
+  font-weight: 600;
   color: var(--primary);
   transition: 0.5s ease all;
   position: relative;
