@@ -1399,7 +1399,7 @@ h4.text-center {
 
 }
 .Footer-section .btn-clr:hover{
-  background: var(--tertiary);
+  background: var(--primary);
   color: var(--light);
 }
 
