@@ -1121,12 +1121,10 @@ h4.text-center {
 
 /* Area we Serve */
 
-.Area-weServe-section {
-  margin: 10px 0;
-}
+
 
 .area-left {
-  background-image: url('../img//about2.png');
+  background-image: url('../img/about2.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1164,6 +1162,7 @@ h4.text-center {
 
 .area-right {
   padding: 2rem;
+  background-color: #f8f9fa;
 }
 
 .area-right h4 {
@@ -1177,6 +1176,7 @@ h4.text-center {
 .area-right ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .area-right ul li {
@@ -1188,26 +1188,44 @@ h4.text-center {
 
 .container2 {
   width: 100%;
-  padding: 0 0.75rem;
+ 
   margin: 0 auto;
 }
 
 /* Responsive */
 @media (max-width: 767px) {
+  .area-left {
+    min-height: 400px;
+  }
+
   .area-left h2 {
     font-size: 1.5rem;
   }
 
   .area-left .highlight {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .area-right h4 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    text-align: center;
   }
 
   .area-right ul li {
     font-size: 1rem;
+    text-align: center;
+  }
+
+  .area-right .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .area-right .col-sm-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
