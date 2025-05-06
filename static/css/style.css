@@ -990,12 +990,22 @@ h4.text-center {
   font-family: var(--sans-serif);
   font-size: 2rem;
   font-weight: bold;
- 
+}
+
+.subhead {
+  color: var(--primary);
+}
+
+.swiper-container-wrapper {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: visible;
 }
 
 .swiper {
-  max-width: 800px;
-  margin: auto;
+  position: relative;
+  overflow: visible;
 }
 
 .swiper-slide {
@@ -1014,22 +1024,7 @@ h4.text-center {
   font-size: 20px;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  color: var(--primary) !important;
-  font-size: 10px;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 10px;
-}
-
-.swiper-pagination-bullet {
-  background-color: var(--light) !important;
-}
-
-
+/* Quote Box Styling */
 .quote-box {
   position: relative;
   padding: 30px 40px;
@@ -1051,21 +1046,45 @@ h4.text-center {
   color: var(--primary);
   font-size: 24px;
   position: absolute;
-  z-index: 0;
   opacity: 0.8;
+  z-index: 0;
 }
 
-.quote-box .fa-quote-left {
+.fa-top-left {
   top: 10px;
   left: 15px;
 }
 
-.quote-box .fa-quote-right {
+.fa-bottom-right {
   bottom: 10px;
   right: 15px;
 }
 
-/* Responsive Media Queries */
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--primary) !important;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: -60px;
+}
+
+.swiper-button-next {
+  right: -60px;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--light) !important;
+}
+
+/* Responsive */
 @media (max-width: 991px) {
   .testimonial-section h2 {
     font-size: 1.8rem;
@@ -1086,6 +1105,14 @@ h4.text-center {
 
   .swiper {
     padding: 0 15px;
+  }
+
+  .swiper-button-prev {
+    left: -30px;
+  }
+
+  .swiper-button-next {
+    right: -30px;
   }
 }
 
@@ -1119,6 +1146,7 @@ h4.text-center {
   }
 }
 
+
 /* Area we Serve */
 
 
@@ -1145,24 +1173,29 @@ h4.text-center {
   z-index: 2;
   position: relative;
   text-align: center;
+  top: 80px;
 }
 
 .area-left h2 {
   font-size: 2rem;
   font-weight: bold;
-  line-height: 1.4;
-  font-family: var(--primary);
-}
+  
+  font-family: var(--sans-serif);
 
-.area-left .highlight {
+}
+.area-left h2 span{
+  font-size: 2.5rem;
+  font-weight: bold;
   color: var(--primary);
   font-family: var(--sans-serif);
-  font-size: 2rem;
+
 }
+
+
 
 .area-right {
   padding: 2rem;
-  background-color: #f8f9fa;
+  background:var(--light-alt);
 }
 
 .area-right h4 {
@@ -1172,6 +1205,7 @@ h4.text-center {
   color: var(--dark);
   font-family: var(--sans-serif);
 }
+
 
 .area-right ul {
   list-style: none;
