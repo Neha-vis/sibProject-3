@@ -42,6 +42,9 @@
 .hero-overlay {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 80px 0;
+  
+  height: 100%; 
+ 
 }
 
 .form-container {
@@ -56,21 +59,23 @@
 }
 
 h4.text-center {
-  color: var(--tertiary);
-  font-weight: 700;
+  color: var(--light);
+  font-weight: 800;
   font-family: var(--sans-serif);
+  font-size: 22px;
 }
 
 .input-group-text {
   background: transparent;
   border: none;
-  font-size: 18px;
+  font-size: 15px;
+  font-family: var(--sans-serif);
 }
 
 .form-control:focus {
   box-shadow: none;
   outline: none;
-  border-color: var(--tertiary);
+  border-color: var(--primary);
 }
 #address {
   height: 70px;
@@ -84,6 +89,8 @@ h4.text-center {
   padding: 10px;
   border-radius: 0;
   transition: background 0.3s ease;
+  font-size: 16px;
+  font-family: var(--sans-serif);
 }
 
 .btn-clr:hover {
@@ -210,13 +217,13 @@ h4.text-center {
 
 /* rental section */
 .rental-section {
-  background-color: var(--dark);
-  padding: 60px 20px;
+  background-color: var(--light);
+  padding: 60px 0px;
 }
 .rental-section h2 {
-  color: var(--primary);
-  font-size: 3rem;
-  font-style: oblique;
+  color: var(--dark);
+  font-size: 2.5rem;
+ 
 }
 .rental-section p {
   color: var(--light);
@@ -248,6 +255,7 @@ h4.text-center {
 .rental-img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
@@ -338,13 +346,28 @@ h4.text-center {
 .custom-section {
   padding: 60px 0;
 }
+.custom-section .cust-p{
+  font-family: var(--sans-serif);
+  color: var(--dark-alt);
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.custom-section .cuto-p{
+  font-family: var(--sans-serif);
+  color: var(--primary);
+  
+  font-size: 18px;
+
+}
+
 .custom-section h2 {
   font-family: var(--sans-serif);
   color: var(--dark);
+  font-size: 2.5rem;
 }
 .custom-section p {
   font-family: var(--sans-serif);
-  font-size: 20px;
+  font-size: 18px;
   color: var(--dark-alt);
 }
 .image-box {
@@ -498,6 +521,7 @@ h4.text-center {
 .about-section {
   padding: 80px 0 50px;
   position: relative;
+  background: var(--light-alt);
 }
 
 .about-section .content-column .inner-column {
@@ -516,40 +540,45 @@ h4.text-center {
   font-family: var(--sans-serif);
 
   position: relative;
+  margin-bottom: 15px;
+
+
 }
 .sec-title h2 span {
   color: var(--primary);
 }
 
 .about-section .text {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 18px;
+ 
   color: var(--dark-alt);
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-family: var(--sans-serif);
 }
 
 .list-style-one {
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   list-style: none;
   padding: 0;
+  
 }
 
 .list-style-one li {
-  font-size: 18px;
-  line-height: 26px;
-  color: var(--dark-alt);
-  font-weight: 600;
+  font-size: 15px;
+ 
+  color: var(--dark);
+  font-weight: 900;
   padding-left: 35px;
   margin-bottom: 12px;
   position: relative;
   font-family: var(--sans-serif);
+  font-size: 16px;
 }
 
 .list-style-one li::before {
   content: "\f058";
   font-family: var(--sans-serif);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   color: var(--primary);
   position: absolute;
@@ -656,7 +685,7 @@ h4.text-center {
 
 .property-section {
   height: 80vh;
-  margin-bottom: 60px;
+ 
 }
 
 .row {
@@ -699,7 +728,7 @@ h4.text-center {
 }
 .content-wrapper h2{
   color: var(--primary);
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: var(--sans-serif);
   margin-bottom: 25px;
@@ -707,7 +736,7 @@ h4.text-center {
 }
 .content-wrapper p{
   color: var(--light);
-  font-size: 20px;
+  font-size: 18px;
   font-family: var(--sans-serif);
 
   
@@ -715,8 +744,8 @@ h4.text-center {
 
 
 .content-wrapper h2 span {
-  color: var(--tertiary);
-  font-size: 2rem;
+  color: var(--primary);
+  font-size: 2.5rem;
   font-family: var(--sans-serif);
 }
 /* Media Queries for Responsiveness */
@@ -846,10 +875,11 @@ h4.text-center {
 .features-section {
   padding: 60px 0px;
   background:var(--light-alt);
+ 
 }
 
 .section-title {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 40px;
   color: var(--primary);
@@ -857,7 +887,7 @@ h4.text-center {
 }
 
 .feature-card {
- 
+ margin-top: 20px;
   padding: 25px;
   border-radius: 12px;
   text-align: center;
@@ -877,7 +907,7 @@ h4.text-center {
 }
 
 .feature-card h4 {
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 10px;
   font-family: var(--sans-serif);
   color: var(--dark);
@@ -886,7 +916,7 @@ h4.text-center {
 }
 
 .feature-card p {
-  font-size: 20px;
+  font-size: 18px;
   color:var(--dark-alt );
   font-family: var(--sans-serif);
 }
@@ -938,119 +968,161 @@ h4.text-center {
     font-size: 0.95rem;
   }
 
-  /* Card spacing on small screens */
+ 
   .col-lg-4, .col-md-6 {
     margin-bottom: 20px;
   }
 }
+/* testimonial section */
 
-
-/* swiper */
-.testimonial-section{
+.testimonial-section {
   padding: 60px 0;
-  background: var(--dark);
+  background-color: var(--dark);
+  background-image: url('../img/testbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
-.testimonial-section h2{
+
+.testimonial-section h2 {
   color: var(--primary);
   font-family: var(--sans-serif);
   font-size: 2rem;
   font-weight: bold;
+ 
 }
+
 .swiper {
-  max-width: 1000px;
+  max-width: 800px;
   margin: auto;
 }
+
 .swiper-slide {
-  padding: 20px;
-  
+  padding: 10px;
   border-radius: 10px;
 }
-.swiper-slide img{
-width: 60px;
-height: 60px;
-}
-.swiper-slide p{
-  color: var(--light);
-  font-family: var(--sans-serif);
-  font-size: 25px;
 
+.swiper-slide img {
+  width: 60px;
+  height: 60px;
 }
-.swiper-slide h6{
-  color: var(--tertiary);
+
+.swiper-slide h6 {
+  color: var(--primary);
   font-family: var(--sans-serif);
   font-size: 20px;
 }
 
-
 .swiper-button-prev,
 .swiper-button-next {
- 
-  color:var(--primary)!important; 
- 
-  font-size: 5px!important;
-  
- 
+  color: var(--primary) !important;
+  font-size: 10px;
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 16px;
+  font-size: 10px;
 }
+
 .swiper-pagination-bullet {
-  background-color: var(--tertiary) !important; 
-  
+  background-color: var(--light) !important;
 }
+
+
+.quote-box {
+  position: relative;
+  padding: 30px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.quote-box p {
+  color: var(--light);
+  font-family: var(--sans-serif);
+  font-size: 20px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.quote-icon {
+  color: var(--primary);
+  font-size: 24px;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.quote-box .fa-quote-left {
+  top: 10px;
+  left: 15px;
+}
+
+.quote-box .fa-quote-right {
+  bottom: 10px;
+  right: 15px;
+}
+
+/* Responsive Media Queries */
 @media (max-width: 991px) {
   .testimonial-section h2 {
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
   }
 
-  .swiper-slide p {
-    font-size: 1rem; 
+  .quote-box p {
+    font-size: 1rem;
   }
 
   .swiper-slide h6 {
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
   }
 
   .swiper-slide img {
-    width: 50px; 
+    width: 50px;
     height: 50px;
   }
 
   .swiper {
-    padding: 0 15px; 
+    padding: 0 15px;
   }
 }
-
 
 @media (max-width: 767px) {
   .testimonial-section {
-    padding: 50px 0; 
+    padding: 50px 0;
+    background-attachment: scroll;
+    background-size: contain;
   }
 
   .testimonial-section h2 {
-    font-size: 1.5rem; 
-    margin-bottom: 20px; 
+    font-size: 1.5rem;
+    margin-bottom: 20px;
   }
 
-  .swiper-slide p {
-    font-size: 0.95rem; 
+  .quote-box p {
+    font-size: 0.95rem;
   }
 
   .swiper-slide h6 {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
   .swiper-slide img {
-    width: 40px; 
+    width: 40px;
     height: 40px;
+  }
+
+  .quote-icon {
+    font-size: 20px;
   }
 }
 
+/* Area we Serve */
 
 .Area-weServe-section {
-  margin: 50px 0;
+  margin: 10px 0;
 }
 
 .area-left {
@@ -1274,7 +1346,7 @@ height: 60px;
 .Footer-section{
   padding: 60px 0px;
   background: black;
-  margin-bottom: 20px;
+ 
 
 }
 .Footer-section i{
@@ -1293,12 +1365,12 @@ height: 60px;
   font-size: 18px;
 }
 .Footer-section .cust-clr{
-  color: var(--tertiary);
+  color: var(--light-alt);
   margin-top: 30px;
 }
 
 .Footer-section h5{
-  color: var(--tertiary);
+  color: var(--dark);
   font-family: sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -1390,23 +1462,25 @@ height: 60px;
   background-position: center;
   padding: 60px 0;
   color: var(--light);
+  
 }
 
-.feature-section2 h2{
+.feature-section2 h2 {
   font-family: var(--sans-serif);
   color: var(--light);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center; 
 }
-.feature-section2 h2 span{
+
+.feature-section2 h2 span {
   color: var(--primary);
-  font-style: initial;
-  text-align: end;
+  
+
 }
 
 .feature-card2 {
-  
+  background-color: transparent;
   color: var(--light);
   transition: all 0.3s ease;
   height: 100%;
@@ -1415,17 +1489,19 @@ height: 60px;
   margin-top: 20px;
 }
 
-.feature-card2 .link-style{
-  color: var(--tertiary);
-  font-size: 15px;
-  text-decoration: none;
+.feature-title2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--primary);
+  font-family: var(--sans-serif);
 }
-.feature-section2 .link-style::after {
-  content: ' →'; 
-  font-size: 25px; 
-  margin-left: 8px; 
-  color: var(--tertiary);
-  font-weight: bold; 
+
+.feature-card2 p {
+  font-family: var(--sans-serif);
+  font-size: 18px;
+  color: var(--light);
+  transition: color 0.3s ease;
 }
 
 .feature-card2:hover {
@@ -1434,26 +1510,23 @@ height: 60px;
   transform: scale(1.03);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-.feature-card2 p {
-  transition: color 0.3s ease; 
-}
-.feature-card2 p:hover {
-  
+
+.feature-card2:hover p {
   color: var(--dark);
-  
 }
 
-.feature-title2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 15px;
+.feature-card2 .link-style {
   color: var(--primary);
-  font-family: var(--sans-serif);
+  font-size: 15px;
+  text-decoration: none;
 }
-.feature-card2 p{
-  color: var(--light);
-  font-family: var(--sans-serif);
-  font-size: 20px;
+
+.feature-section2 .link-style::after {
+  content: ' →'; 
+  font-size: 25px; 
+  margin-left: 8px; 
+  color: var(--primary);
+  font-weight: bold; 
 }
 
 /* Responsive Styles */
